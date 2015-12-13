@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="GALibrary.Core.GAStrategy&lt;T&gt;">
+    <Position X="5.75" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <FileName>Core\GAStrategy.cs</FileName>
+      <HashCode>IABAAAQABQAAIEQIAAAAAAoAAQAAAACAAgEABAAAAAI=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_chromosomeGenerator" />
+      <Field Name="m_stopCondition" />
+      <Field Name="m_judgeStrategy" />
+      <Field Name="m_selectionStrategy" />
+      <Field Name="m_crossoverStrategy" />
+      <Field Name="m_mutationStrategy" />
+    </ShowAsAssociation>
+    <AssociationLine Name="m_judgeStrategy" Type="GALibrary.Core.IJudgeStrategy&lt;T&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.938" Y="2.75" />
+        <Point X="5.938" Y="2.292" />
+        <Point X="3.375" Y="2.292" />
+        <Point X="3.375" Y="1.646" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.161" Y="0.695" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="m_crossoverStrategy" Type="GALibrary.Core.ICrossoverStrategy&lt;T&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="6.938" Y="2.75" />
+        <Point X="6.938" Y="2.192" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.432" Y="0.07" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="m_mutationStrategy" Type="GALibrary.Core.IMutationStrategy&lt;T&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.562" Y="2.75" />
+        <Point X="7.562" Y="2.264" />
+        <Point X="10" Y="2.264" />
+        <Point X="10" Y="2.191" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.015" Y="0.664" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="GALibrary.Core.Chromosome">
+    <Position X="8.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <FileName>Core\Chromosome.cs</FileName>
+      <HashCode>AAggAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAgAAAAABQ=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="GALibrary.Core.IChromosomeGenerator&lt;T&gt;">
+    <Position X="1.25" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Core\IChromosomeGenerator.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GALibrary.Core.IStopCondition">
+    <Position X="1.25" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Core\IStopCondition.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GALibrary.Core.IJudgeStrategy&lt;T&gt;">
+    <Position X="2.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Core\IJudgeStrategy.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GALibrary.Core.ISelectionStrategy&lt;T&gt;">
+    <Position X="4.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Core\ISelectionStrategy.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GALibrary.Core.ICrossoverStrategy&lt;T&gt;">
+    <Position X="6.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Core\ICrossoverStrategy.cs</FileName>
+      <HashCode>AAEAgAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GALibrary.Core.IMutationStrategy&lt;T&gt;">
+    <Position X="9" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Core\IMutationStrategy.cs</FileName>
+      <HashCode>AAAAgAAAAAAAAQAAAAAAAAAAAAAAAAAACAAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

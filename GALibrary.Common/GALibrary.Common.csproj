@@ -1,0 +1,83 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12897EA2-7D21-4E87-A9B6-C8EE394D1440}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GALibrary.Common</RootNamespace>
+    <AssemblyName>GALibrary.Common</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AutonomousJudgeStrategy.cs" />
+    <Compile Include="Common\ChromosomeComparer.cs" />
+    <Compile Include="Common\GeometricRankBasedProbabilityComputator.cs" />
+    <Compile Include="Common\PowerLawScaling.cs" />
+    <Compile Include="Common\IOneChromosomeJudge.cs" />
+    <Compile Include="Common\IOneChromosomeMutation.cs" />
+    <Compile Include="Common\IRankBasedProbabilityComputator.cs" />
+    <Compile Include="Common\IterationalGAStrategy.cs" />
+    <Compile Include="Common\IterationalGAStrategyEventArgs.cs" />
+    <Compile Include="Common\IterationNumberStopCondition.cs" />
+    <Compile Include="Common\ITwoChromosomeCrossover.cs" />
+    <Compile Include="Common\LinearRankBasedProbabilityComputator.cs" />
+    <Compile Include="Common\LinearScaling.cs" />
+    <Compile Include="Common\RankingSelection.cs" />
+    <Compile Include="Common\OneChromosomeMutationStrategy.cs" />
+    <Compile Include="Common\ProportionalSelectionStrategy.cs" />
+    <Compile Include="Common\SigmaTruncationScaling.cs" />
+    <Compile Include="Common\TournamentSelection .cs" />
+    <Compile Include="Common\TwoChromosomeCrossoverStrategy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Common\Common.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GALibrary.Probability\GALibrary.Probability.csproj">
+      <Project>{EF004C7F-E1AC-4AB9-9711-DC4C87C482C3}</Project>
+      <Name>GALibrary.Probability</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GALibrary.Core\GALibrary.Core.csproj">
+      <Project>{71210C86-33B3-410D-93CD-C3A34E079478}</Project>
+      <Name>GALibrary.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

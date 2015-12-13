@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="GALibrary.Common.TwoChromosomeCrossoverStrategy&lt;T&gt;">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <FileName>Common\TwoChromosomeCrossoverStrategy.cs</FileName>
+      <HashCode>AAEAgAAAAABAAQAAAAAAAAAAAAAAAEAAAAAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_chromosomeCrossover" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GALibrary.Common.OneChromosomeMutationStrategy&lt;T&gt;">
+    <Position X="0.5" Y="2.75" Width="3.25" />
+    <TypeIdentifier>
+      <FileName>Common\OneChromosomeMutationStrategy.cs</FileName>
+      <HashCode>AAAAgAAAAEAAAQAAAAAAAAAAAABAAAAACAAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_chromosomeMutation" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GALibrary.Common.AutonomousJudgeStrategy&lt;T&gt;">
+    <Position X="0.5" Y="5" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Common\AutonomousJudgeStrategy.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAAAACACAAAAAAAAAAAAAAACAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_chromosomeJudge" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GALibrary.Core.GAStrategy&lt;T&gt;">
+    <Position X="0.5" Y="7" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GALibrary.Common.IterationalGAStrategy&lt;T&gt;">
+    <Position X="6" Y="7" Width="2" />
+    <TypeIdentifier>
+      <FileName>Common\IterationalGAStrategy.cs</FileName>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAII=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GALibrary.Common.NongroupingRankingSelection&lt;T&gt;">
+    <Position X="0.5" Y="10.5" Width="3" />
+    <TypeIdentifier>
+      <FileName>Common\NongroupingRankingSelection.cs</FileName>
+      <HashCode>AAAEAAAAAAAAIQAAAACAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_probabilityComputator" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="GALibrary.Common.ITwoChromosomeCrossover&lt;T&gt;">
+    <Position X="5.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Common\ITwoChromosomeCrossover.cs</FileName>
+      <HashCode>AAEAgAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GALibrary.Common.IOneChromosomeMutation&lt;T&gt;">
+    <Position X="5.75" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Common\IOneChromosomeMutation.cs</FileName>
+      <HashCode>AAAAgAAAAAAAAQAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GALibrary.Common.IOneChromosomeJudge&lt;T&gt;">
+    <Position X="5.75" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Common\IOneChromosomeJudge.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GALibrary.Common.IRankBasedSelectionProbabilityComputator">
+    <Position X="6" Y="10.5" Width="3.25" />
+    <TypeIdentifier>
+      <FileName>Common\IRankBasedSelectionProbabilityComputator.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>
